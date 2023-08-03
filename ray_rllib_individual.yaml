@@ -34,8 +34,7 @@ config:
     batch_mode: truncate_episodes
     num_workers: 8
     num_envs_per_worker: 2
-    #rollout_fragment_length: 64
-    horizon: 128
+    rollout_fragment_length: 64
     num_gpus: 1
     no_done_at_end: False
     soft_horizon: False
