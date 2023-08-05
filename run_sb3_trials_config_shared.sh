@@ -15,5 +15,5 @@ count=${1:-$default_count}
 # Create runs
 for num in $(seq 0 $count)
 do
-    python ${script_dir}/config/stable_baselines3_shared.py --env_path=${script_dir}/builds/AirPlatformerPlus_Seed_Env_16/bin/AirPlatformer.x86_64 --n_parallel=8 --speedup=8 --timesteps=7000000 --seed=${num} --experiment_name=Air0${num}_config_default_agents_16_workers_8_seed_${num}
+    python ${script_dir}/config/stable_baselines3_shared.py --env_path=${script_dir}/builds/AirPlatformerPlus_Seed_Env_16/bin/AirPlatformer.x86_64 --n_parallel=8 --speedup=8 --timesteps=7000000 --seed=${num} --experiment_name=Air0${num}_config_shared_agents_16_workers_8_seed_${num}
 done
